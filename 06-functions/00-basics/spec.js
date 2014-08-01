@@ -14,15 +14,15 @@ describe("helloWorld", function() {
 
 describe("multiply", function() {
   it("is defined and is a function", function() {
-    expect(challenge.multiply).to.exist
+    expect(challenge.multiply).to.exist;
     expect(challenge.multiply).to.be.a('function');
   });
 
-  it("multiples 4 and 7", function () {
+  it("multiplies 4 and 7", function () {
     expect(challenge.multiply(4,7)).to.equal(28);
   });
 
-  it("multiples 5 and 12", function () {
+  it("multiplies 5 and 12", function () {
     expect(challenge.multiply(5,12)).to.equal(60);
   });
 });
