@@ -71,21 +71,21 @@ describe("canIGet", function() {
   });
 
   it("returns the correct results for MacBook Air", function() {
-    expect(challenge.canIGet("MacBook Air", 999)).to.be.true;
+    expect(challenge.canIGet("MacBook Air", 899)).to.be.true;
     expect(challenge.canIGet("MacBook Air", 1000)).to.be.true;
-    expect(challenge.canIGet("MacBook Air", 998)).to.be.false;
+    expect(challenge.canIGet("MacBook Air", 898)).to.be.false;
   });
 
   it("returns the correct results for MacBook Pro", function() {
-    expect(challenge.canIGet("MacBook Pro", 1299)).to.be.true;
-    expect(challenge.canIGet("MacBook Pro", 1300)).to.be.true;
-    expect(challenge.canIGet("MacBook Pro", 1298)).to.be.false;
+    expect(challenge.canIGet("MacBook Pro", 1099)).to.be.true;
+    expect(challenge.canIGet("MacBook Pro", 1100)).to.be.true;
+    expect(challenge.canIGet("MacBook Pro", 1098)).to.be.false;
   });
 
   it("returns the correct results for Mac Pro", function() {
-    expect(challenge.canIGet("Mac Pro", 2499)).to.be.true;
-    expect(challenge.canIGet("Mac Pro", 2500)).to.be.true;
-    expect(challenge.canIGet("Mac Pro", 2498)).to.be.false;
+    expect(challenge.canIGet("Mac Pro", 2999)).to.be.true;
+    expect(challenge.canIGet("Mac Pro", 3000)).to.be.true;
+    expect(challenge.canIGet("Mac Pro", 2998)).to.be.false;
   });
 
   it("returns correct results for Apple Sticker", function() {
